@@ -35,7 +35,8 @@ def make_meta(version: str, sha256: str) -> dict:
 
 
 def download_insiders(tmpdir: str) -> (dict, str):
-    url = 'https://update.code.visualstudio.com/latest/linux-x64/insider'
+    url = 'https://code.visualstudio.com/sha/download?build=insider&os=linux-x64'
+    # url = 'https://update.code.visualstudio.com/latest/linux-x64/insider'
     print('downloading latest code-insiders')
     filename, _ = urlretrieve(url, f'{tmpdir}/{asset_name}')
     sha256 = subprocess.run(

@@ -1,7 +1,7 @@
 {
   description = "Nix Flake for Code Insider";
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/master";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
   outputs = {
     self,
